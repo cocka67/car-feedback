@@ -1,0 +1,100 @@
+.cards__list-conteiner {
+  display: grid;
+  grid-template-columns: [start] 34.1% [column] 34% [end] 34%;
+  gap: 2%;
+  padding-top: 2.4%;
+  width: 70%;
+  min-width: 786px;
+}
+
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 6.5%;
+}
+
+.cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards__button {
+  padding: 12% 22% 0 0;
+}
+
+
+@media (width <=1660px) {
+    .cards__list-conteiner {
+      grid-template-columns: [start] 37.1% [column] 37% [end] 37%;
+      width: 65%;
+    }
+    
+}
+
+@media (width <=1490px) {
+  .cards__list-conteiner {
+    grid-template-columns: [start] 34% [column] 33% [end] 33%;
+    row-gap: 2%;
+    column-gap: 0; 
+    width: 75%;
+  }
+
+  .cards__button {
+    padding: 6% 20% 0 0;
+  }
+}
+
+
+
+@media (width<=1315px) {
+  .cards__list-conteiner {
+    grid-template-columns: [start] 50% [column] 50%; 
+    min-width: 360px;
+    /* Две карточки в строку для экранов меньше 1024px */
+  }
+  .cards__button {
+    padding: 10% 25% 0 0;  
+  }
+  
+}
+
+@media (max-width: 1024px) {
+  .cards__list-conteiner {
+    grid-template-columns: [start] 52% [column] 52%;
+    width: 100%;
+    height: auto;
+  }
+
+  .cards__button {
+    padding: 40% 0% 0 0;
+  }
+
+}
+
+@media (max-width: 865px) {
+  .cards__container {
+    justify-content: center;
+  }
+  
+}
+
+@media (max-width: 786px) {
+  .cards__list-conteiner {
+    grid-template-columns: 100%; 
+    /* Одна карточка в строку для экранов меньше 786px */
+  }
+  .cards__button {
+    padding: 80% 0% 0 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .cards__list-conteiner {
+    grid-template-columns: 100%; /* Одна карточка в строку для экранов меньше 786px */
+  }
+  .cards__button {
+    padding: 90% 0% 0 0;
+  }
+}

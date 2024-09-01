@@ -1,0 +1,172 @@
+.footer {
+  margin-top: 6.5%;
+  padding: 2.7% 0;
+  background: rgba(243, 244, 248, 1);
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(130, 136, 150, 1);
+  padding: 0 0 1.1%;
+  align-items: center;
+  position: relative;
+}
+
+.footer__logo {
+  display: block;
+  padding: 20px 0px;
+  width: 100%;
+  align-self: center;
+}
+
+.footer__logo-name {
+  font-family: 'Lato';
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+.menu__text {
+  padding: 1.1% 0 0;
+}
+
+.menu__button {
+  display: flex;
+  gap: 5%;
+  max-height: 50px;
+  width: 17.2%;
+}
+
+.logo {
+  display: block;
+  padding: 1% 0px;
+  max-width: 119px;
+  min-width: 89px;
+  align-self: center;
+}
+
+.logo__image {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+
+}
+
+.menu__list {
+  display: flex;
+  gap: 34px;
+  width: 100%;
+}
+
+.about__vote-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: 0;
+  color: rgba(58, 178, 91, 1);
+  border: 1px solid rgba(58, 178, 91, 1);
+}
+
+.about__button-image {
+  padding: 0;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu__link {
+  font-family: "Lato";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  position: relative;
+}
+
+@media (width <=1490px) {
+  .menu__button {
+    width: 25.2%;
+  }
+}
+
+@media (width <=1180px) {
+  .menu__button {
+    width: 28.2%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer__container {
+    flex-wrap: nowrap;
+    /* Убираем перенос строк */
+  }
+
+  .menu__button {
+    width: 35.2%;
+  }
+
+  .menu {
+    position: absolute;
+    bottom: -150%;
+    left: 0;
+    width: 100%;
+    order: 1;
+    padding: 10px 0;
+  }
+
+  .menu__text {
+    order: 2;
+    /* Блок с копирайтом идет последним */
+    margin-top: 17%;
+    /* Добавляем отступ сверху для копирайта */
+  }
+}
+
+@media (width <=890px) {
+  .menu__button {
+    width: 40.2%;
+    justify-content: flex-end;
+  }
+}
+
+@media (width <=786px) {
+  .about__vote-button{
+    position: absolute;
+    bottom: -75%;
+    left: 0;
+    width: 100%;
+    order: 0;
+    padding: 10px 0;
+  }
+}
+
+
+@media (width <=520px) {
+  .menu {
+    position: absolute;
+    bottom: -180%;
+    left: 0;
+    width: 100%;
+    order: 1;
+    padding: 10px 0;
+  }
+  .menu__text {
+    order: 2;
+    margin-top: 30%;
+  }
+
+  .menu__list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 15px;
+  }
+
+  
+}

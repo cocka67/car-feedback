@@ -1,0 +1,103 @@
+.dropdown {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.dropdown__block {
+  position: relative;
+}
+
+.dropdown__label {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.dropdown__select {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  appearance: none; /* Убираем стандартный вид */
+  background-color: #fff; /* Белый фон */
+  border: 1px solid #21a038; /* Зеленый бордер */
+  color: #21a038; /* Зеленый текст */
+  padding: 8px; /* Добавляем внутренний отступ */
+  border-radius: 4px; /* Слегка закругляем углы */
+  cursor: pointer;
+}
+
+.highlight {
+  color: rgba(58, 178, 91, 1);
+  font-weight: 600;
+}
+
+/* Стили для отображения стрелки вниз при наведении */
+.dropdown__label:hover {
+  border-bottom: 1px solid rgba(58, 178, 91, 1);
+}
+
+/* Option elements styling */
+.dropdown__select option {
+  background-color: #fff; /* Белый фон для элементов списка */
+  color: #21a029; /* Зеленый текст */
+}
+
+/* Styling for hover effect on select */
+.dropdown__select:hover {
+  border-color: #42dc6d; /* Более светлый зеленый бордер при наведении */
+}
+
+.sort__label{
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .dropdown__label {
+    font-size: 24px;
+    cursor: pointer; 
+  }
+  .sort__label{
+    font-size: 14px;
+  }
+  .dropdown{
+    width: 100%;
+    margin: 2%;
+  }
+}
+
+
+@media (max-width: 786px) {
+  .dropdown__block{
+    margin: 2%; 
+  }
+
+  
+}
+
+
+@media (max-width: 490px) {
+  .dropdown{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2%;
+  }
+
+  .sort__block{
+    padding: 3% 6%;
+        border: 1px solid rgba(230, 231, 234, 1);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-radius: 8px;
+  }
+  
+}
+
+

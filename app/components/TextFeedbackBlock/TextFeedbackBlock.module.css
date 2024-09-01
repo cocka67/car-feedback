@@ -1,0 +1,50 @@
+.banner {
+  padding: 7% 0px;
+  display: flex;
+  gap: 20px;
+  background-image: url(/images/banner.png);
+  font-family: "Lato";
+}
+
+.banner__title {
+  font-size: 36px;
+  margin-bottom: 18px;
+  max-width: 708px;
+  font-weight: 700;
+}
+
+.banner__text-block {
+  line-height: 24px;
+  margin-bottom: 40px;
+  max-width: 630px;
+}
+
+.banner__link {
+  display: block;
+}
+
+.banner__image {
+  width: 100%;
+  max-width: 228px;
+  box-shadow: 8px 8px 0 black;
+  margin-right: 40px;
+  align-self: center;
+  justify-self: center;
+}
+
+
+@media (width <=768px) {
+  .banner__title {
+    font-size: 28px;
+  }
+
+  .banner__text-block {
+    font-size: 16px;
+  }
+}
+
+@media (width <=650px) {
+  .banner {
+    padding: 80px 14px;
+  }
+}
