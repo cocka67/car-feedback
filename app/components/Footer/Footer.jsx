@@ -53,18 +53,9 @@ export const Footer = () => {
                 Правила
               </Link>
             </li>
-            <li className={Styles["menu__item"]}>
-              <Link
-                href="/new"
-                className={`${Styles["menu__link"]} ${pathname === "/new" && Styles["menu__link_active"]
-                  }`}>
-                Политика конфиденциальности
-              </Link>
-            </li>
           </ul>
         </nav>
         <div className={Styles["menu__button"]}>
-          <button className={`button ${Styles["about__vote-button"]}`}>Добавить автосалон</button>
           <a href="#" className={`button ${Styles["about__button-image"]}`}>
             <img
               src='/images/arrow.svg'

@@ -40,7 +40,6 @@ export const RatingCarDealers = () => {
         ))}
         <p className={Styles["last-update"]}>Последнее обновление информации: 22.01.2024 г.</p>
       </div>
-      <img src='/images/Реклама.png' alt='' className={Styles["card__image-ad"]} />
     </article>
   );
 };
