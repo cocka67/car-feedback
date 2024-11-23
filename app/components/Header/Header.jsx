@@ -50,7 +50,7 @@ export const Header = ({ onSearch }) => { // Добавляем пропс onSea
           <ul className={Styles["menu__list"]}>
             <li className={Styles["menu__item"]}>
               <Link
-                href="/new"
+                href="#"
                 className={`${Styles["menu__link"]} ${pathname === "/new" && Styles["menu__link_active"]}`}
               >
                 Главная
@@ -58,7 +58,7 @@ export const Header = ({ onSearch }) => { // Добавляем пропс onSea
             </li>
             <li className={Styles["menu__item"]}>
               <Link
-                href="/popular"
+                href="#main"
                 className={`${Styles["menu__link"]} ${pathname === "/popular" && Styles["menu__link_active"]}`}
               >
                 Отзывы
@@ -66,7 +66,7 @@ export const Header = ({ onSearch }) => { // Добавляем пропс onSea
             </li>
             <li className={Styles["menu__item"]}>
               <Link
-                href="/shooters"
+                href="#"
                 className={`${Styles["menu__link"]} ${pathname === "/shooters" && Styles["menu__link_active"]}`}
               >
                 Обратная связь
@@ -74,7 +74,7 @@ export const Header = ({ onSearch }) => { // Добавляем пропс onSea
             </li>
             <li className={Styles["menu__item"]}>
               <Link
-                href="/runners"
+                href="#"
                 className={`${Styles["menu__link"]} ${pathname === "/runners" && Styles["menu__link_active"]}`}
               >
                 Правила

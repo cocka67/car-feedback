@@ -1,9 +1,10 @@
 import './globals.css'; 
-import { Header } from './components/Header/Header'; 
 
 export default function RootLayout({ children }) {
   return (
     <html lang="ru">
+      <title>авто отзыв</title>
+      <meta name="description" content="Отзывы автосалонов."/>
       <body>
         {children}
       </body>

@@ -56,7 +56,7 @@ export const Card = (props) => {
         <div className={Styles["card__block-container"]}>
           <img src={props.image} alt="" className={Styles["card__image"]} />
           <div className={Styles["card__text-container"]}>
-            <h3 className={Styles["card__title"]}>{props.title}</h3>
+            <h1 className={Styles["card__title"]}>{props.title}</h1>
             <div className={Styles["card__feedback-container"]}>
               <p className={Styles["card__rating"]}>
                 <span className={Styles["card__star"]}>⭐</span> {props.rating}

@@ -62,7 +62,7 @@ export const CardsList = () => {
     <>
       <Header onSearch={handleSearch} />
       <TextFeedbackBlock />
-      <section className={Styles["cards__list"]}>
+      <section id='main' className={Styles["cards__list"]}>
         <div className={`container ${Styles['cards__container']}`}>
           <DropdownList onCityChange={handleCityChange} onSortChange={handleSortChange} selectedCity={selectedCity} sortType={sortType} />
           <div className={Styles["cards__list-conteiner"]}>

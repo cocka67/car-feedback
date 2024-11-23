@@ -15,7 +15,7 @@ export const TextFeedbackBlock = () => {
             и не станете жертвой автообмана!
           </p>
         </div>
-        <a href="#popular" className={`button ${Styles['banner__link']}`}>
+        <a href="#main" className={`button ${Styles['banner__link']}`}>
           Найти отзывы об автосалоне
         </a>
       </div>
